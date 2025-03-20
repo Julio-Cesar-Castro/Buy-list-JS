@@ -1,36 +1,38 @@
 :root {
 
-/* Colors */
+  /* Colors */
 
---background-primary: #F4F5FB;
---background-secondary: #FFFFFF;
+  --background-primary: #F4F5FB;
+  --background-secondary: #FFFFFF;
 
---color-brand: #CA3884;
---color-brand-hover: #A52C6B;
---color-danger: #C93947;
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93947;
 
---content-primary: #080B12;
---content-secondary: #374151;
---content-tertiary: #9CA3AF;
+  --content-primary: #080B12;
+  --content-secondary: #374151;
+  --content-tertiary: #9CA3AF;
 
---alywas-white: #FFFFFF;
+  --always-white: #FFFFFF;
 
---border-primary: #D1D5DB;
---border-hover: #B9C2D0;
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0;
 
-/* Colors */
+  /* Colors */
 
- /* Fonts */
- --ff-inter: 'Inter', sans-serif;
+  /* Fonts */
+  --ff-inter: 'Inter', sans-serif;
 
   --title: 800 1.5rem/2rem var(--ff-inter);
   --label: 600 1rem/1.25rem var(--ff-inter);
   --paragraph: 500 1rem/1.25rem var(--ff-inter);
   --link: 500 0.875rem/1rem var(var(--ff-inter));
- /* Fonts */
+  /* Fonts */
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -41,9 +43,17 @@ html {
   font-family: var(--ff-inter);
 }
 
+body {
+  background-color: var(--background-primary);
+}
+
 a {
   all: unset;
   text-decoration: none;
+}
+
+img {
+  cursor: pointer;
 }
 
 .btn {
@@ -51,12 +61,14 @@ a {
   height: 2.75rem;
   padding-inline: 8px;
   background-color: var(--color-brand);
-  color: var(--alywas-white);
+  color: var(--always-white);
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 208ms ease-in-out;
+  outline: none;
+  border: none;
 
   cursor: pointer;
 
@@ -72,11 +84,12 @@ input {
   border-radius: 0.75rem;
   font: var(--label);
   color: var(--content-primary);
-  
+
   outline: none;
   border: 0.125rem solid var(--border-primary);
   background-color: var(--background-secondary);
   cursor: pointer;
+
   &::placeholder {
     color: var(--content-tertiary);
   }
@@ -85,7 +98,8 @@ input {
     border: 2px solid var(--border-hover);
   }
 
-  &:active, &:focus{
+  &:active,
+  &:focus {
     border: 2px solid var(--color-brand);
 
     &::placeholder {
@@ -94,7 +108,7 @@ input {
   }
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   all: unset;
 
   width: 1rem;
@@ -103,7 +117,7 @@ input[type="checkbox"]{
   border-radius: 0.5rem;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     border: 1px solid var(--border-hover);
   }
 
@@ -112,4 +126,8 @@ input[type="checkbox"]{
     background-position: center center;
     background-color: var(--color-brand);
   }
+}
+
+.desktop-only {
+  display: none;
 }

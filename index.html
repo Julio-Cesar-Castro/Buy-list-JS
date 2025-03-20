@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
 
+<body>
+  <div class="container">
+    <div>
+      <img src="/assets/logo.svg" alt="" class="desktop-only">
+    </div>
+
+    <header>
+      <img src="/assets/back-button.svg" alt="">
+      <h1>Compras da semana</h1>
+    </header>
+
+    <form>
+      <input type="text" id="input-list" placeholder="Adicione um item a lista">
+      <button id="btn-add" class="btn">Adicionar item</button>
+    </form>
+
+    <main>
+      <!-- <div class="card">
+        <input type="checkbox" name="markAsRead" id="markAsRead">
+        <p>Pão de forma</p>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+      <div class="card">
+        <input type="checkbox" name="markAsRead" id="markAsRead">
+        <p>Pão de forma</p>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+      <div class="card">
+        <input type="checkbox" name="markAsRead" id="markAsRead">
+        <p>Pão de forma</p>
+        <img src="assets/icons/trash.svg" alt="">
+      </div>
+      <div class="card">
+        <input type="checkbox" name="markAsRead" id="markAsRead">
+        <p>Pão de forma</p>
+        <img src="assets/icons/trash.svg" alt="">
+      </div> -->
+    </main>
+
+    <div class="alert-remove">
+      <img src="assets/icons/alert.svg" alt="">
+      <span>O Item foi removido da lista</span>
+      <img src="assets/icons/remove.svg" alt="">
+    </div>
+
+  </div>
+
+  <script src="./scritp.js"></script>
 </body>
+
 </html>
