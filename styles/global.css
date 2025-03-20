@@ -131,3 +131,7 @@ input[type="checkbox"] {
 .desktop-only {
   display: none;
 }
+
+.hidden {
+  opacity: 0;
+}
