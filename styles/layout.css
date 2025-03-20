@@ -74,6 +74,7 @@
     padding: 0.75rem;
     border-radius: 0.75rem;
     margin-top: 2.25rem;
+    transition: position 3s;
 
     background-color: var(--color-danger);
 
